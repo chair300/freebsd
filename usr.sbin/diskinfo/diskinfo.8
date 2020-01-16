@@ -37,7 +37,7 @@
 .Nd get information about disk device
 .Sh SYNOPSIS
 .Nm
-.Op Fl citSvw
+.Op Fl citSvwj
 .Ar disk ...
 .Nm
 .Op Fl p
@@ -70,6 +70,8 @@ Perform synchronous random write test (ZFS SLOG test),
 measuring time required to write data blocks of different size and
 flush disk cache.
 Blocks of more then 128KB are written with multiple parallel operations.
+.It Fl j
+Provides JSON formatted output
 .It Fl t
 Perform a simple and rather naive benchmark of the disks seek
 and transfer performance.
